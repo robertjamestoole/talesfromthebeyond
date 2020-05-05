@@ -168,6 +168,7 @@ main li {
 /* Form styles */
 .form {
   width: 80vw;
+  max-width: 400px;
   background-color: var(--offblack);
   border-radius: 8px;
   margin-top: 10vh;
@@ -199,4 +200,5 @@ form button {
 
 footer {
   background-color: var(--offblack);
+  padding: 10px 0px 20px 0px;
 }
