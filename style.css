@@ -93,10 +93,6 @@ body {
   color: white;
   z-index: 2;
 }
-
-.flex-social-bottom {
-  justify-content: center;
-}
 /* button */
 .btn {
   background-color: var(--main);
@@ -148,7 +144,7 @@ body {
 }
 
 .bottom-social-svg {
-  width: 50%;
+  width: 40%;
   height: 20vh;
 }
 /* list styles */
@@ -167,4 +163,40 @@ main li {
 
 .trans {
   color: transparent;
+}
+
+/* Form styles */
+.form {
+  width: 80vw;
+  background-color: var(--offblack);
+  border-radius: 8px;
+  margin-top: 10vh;
+}
+
+form :nth-child(odd) {
+  margin-top: 22px;
+}
+
+form label,
+input {
+  border-radius: 4px;
+  font-family: "Lato", sans-serif;
+}
+
+form label {
+  color: var(--accent);
+}
+
+form button {
+  margin-bottom: 10px;
+  border-radius: 4px;
+  border-color: var(--main);
+  font-weight: 700;
+  width: 20vw;
+  background-color: var(--main);
+  color: var(--white);
+}
+
+footer {
+  background-color: var(--offblack);
 }
