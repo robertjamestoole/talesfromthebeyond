@@ -1,0 +1,170 @@
+/* Colors */
+:root {
+  --main: #810020;
+  --accent: #f4b63f;
+  --black: #0b0b0b;
+  --offblack: #1b1b1b;
+  --white: #ffffe4;
+}
+/* Setup */
+body {
+  background-color: var(--black);
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+  color: var(--white);
+}
+/* Container */
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+/* Card */
+.card {
+  width: 96vw;
+  height: 70vh;
+  padding: 2vh 2vw;
+}
+
+.wrapper {
+  width: 100%;
+  height: 80vh;
+  border-bottom: 2vh solid var(--offblack);
+}
+/* nav */
+.nav-logo {
+  width: 100%;
+  height: 5vh;
+  padding-top: 1vh;
+  fill: var(--main);
+}
+
+.nav-underline {
+  border: 1px solid var(--white);
+  width: 80%;
+}
+/* Hero */
+.hero-panel {
+  position: absolute;
+  top: 0;
+  background: url(hero-img.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 80vh;
+  opacity: 0.2;
+  z-index: -1;
+}
+
+/* .hero-panel-grade {
+  position: absolute;
+  top: 0;
+  background-image: linear-gradient(
+    to bottom,
+    #0b0b0b,
+    #0f0f0f,
+    #121212,
+    #151515,
+    #181818,
+    #181818,
+    #181818,
+    #181818,
+    #151515,
+    #121212,
+    #0f0f0f,
+    #0b0b0b
+  );
+  width: 100vw;
+  height: 74vh;
+  filter: opacity(0.3);
+  z-index: -1;
+} */
+
+.flex {
+  display: flex;
+}
+
+.flex-center {
+  justify-content: center;
+  align-self: center;
+  width: 100%;
+  color: white;
+  z-index: 2;
+}
+
+.flex-social-bottom {
+  justify-content: center;
+}
+/* button */
+.btn {
+  background-color: var(--main);
+  border-radius: 8px;
+  border: 2px solid var(--main);
+  width: 60vw;
+  height: 50px;
+  margin-top: 4vh;
+  box-shadow: 6px 6px 6px 6px rgba(0, 0, 0, 0.6);
+  stroke: black;
+}
+
+/* Text */
+.big-text {
+  font-size: 3rem;
+  line-height: 4rem;
+  letter-spacing: 0.07rem;
+}
+
+.yellow {
+  color: var(--accent);
+  text-decoration: underline;
+  border-bottom: 2px solid var(--main);
+}
+
+.just-yellow {
+  color: var(--accent);
+}
+
+.small-grey {
+  opacity: 0.5;
+  letter-spacing: 0.15rem;
+}
+
+.btn-text {
+  font-size: 2rem;
+  text-decoration: none;
+}
+/* svg */
+.listen-svg {
+  width: 30%;
+  height: 40vh;
+}
+
+.social-svg {
+  width: 80%;
+  height: 20vh;
+  margin-top: 5vh;
+}
+
+.bottom-social-svg {
+  width: 50%;
+  height: 20vh;
+}
+/* list styles */
+.no-dec {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+main ul {
+  padding: 0;
+}
+
+main li {
+  display: inline;
+}
+
+.trans {
+  color: transparent;
+}
