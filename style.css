@@ -33,11 +33,23 @@ body {
   border-bottom: 2vh solid var(--offblack);
 }
 /* nav */
+.nav-bar {
+  height: 6.5vh;
+  width: 100%;
+}
+
 .nav-logo {
   width: 100%;
   height: 5vh;
   padding-top: 1vh;
   fill: var(--main);
+}
+
+.nav-link {
+  font-size: 2.5vh;
+  align-self: center;
+  padding: 0px 2vw;
+  font-weight: 700;
 }
 
 .nav-underline {
@@ -99,7 +111,8 @@ body {
   border-radius: 8px;
   border: 2px solid var(--main);
   width: 60vw;
-  height: 50px;
+  max-width: 500px;
+  height: 5vh;
   margin-top: 4vh;
   box-shadow: 6px 6px 6px 6px rgba(0, 0, 0, 0.6);
   stroke: black;
@@ -107,8 +120,8 @@ body {
 
 /* Text */
 .big-text {
-  font-size: 3rem;
-  line-height: 4rem;
+  font-size: 5.5vh;
+  line-height: 6vh;
   letter-spacing: 0.07rem;
 }
 
@@ -123,17 +136,18 @@ body {
 }
 
 .small-grey {
+  font-size: 1.3vh;
   opacity: 0.5;
   letter-spacing: 0.15rem;
 }
 
 .btn-text {
-  font-size: 2rem;
+  font-size: 3vh;
   text-decoration: none;
 }
 /* svg */
 .listen-svg {
-  width: 30%;
+  width: 100%;
   height: 40vh;
 }
 
@@ -147,6 +161,15 @@ body {
   width: 40%;
   height: 20vh;
 }
+
+.top-social {
+  max-width: 300px;
+}
+
+.bot-social {
+  max-width: 600px;
+}
+
 /* list styles */
 .no-dec {
   list-style-type: none;
@@ -168,7 +191,7 @@ main li {
 /* Form styles */
 .form {
   width: 80vw;
-  max-width: 400px;
+  max-width: 600px;
   background-color: var(--offblack);
   border-radius: 8px;
   margin-top: 10vh;
@@ -182,6 +205,7 @@ form label,
 input {
   border-radius: 4px;
   font-family: "Lato", sans-serif;
+  font-size: 2vh;
 }
 
 form label {
@@ -194,6 +218,7 @@ form button {
   border-color: var(--main);
   font-weight: 700;
   width: 20vw;
+  max-width: 500px;
   background-color: var(--main);
   color: var(--white);
 }
@@ -201,4 +226,31 @@ form button {
 footer {
   background-color: var(--offblack);
   padding: 10px 0px 20px 0px;
+}
+
+/* Invis for things not on screen for mobile */
+.invis-small {
+  position: fixed;
+  color: transparent;
+}
+
+/* Making the site work for desktop */
+/* Starting with 768px for ipad to desktop */
+@media all and (min-width: 768px) /* For Standard Desktop */ {
+  /* Expanding Nav */
+  .logo-link {
+    position: absolute;
+    left: 0;
+    padding-left: 6vw;
+  }
+
+  .invis-small {
+    position: relative;
+    color: var(--white);
+  }
+
+  .nav-bar {
+    justify-content: flex-end;
+    width: 94%;
+  }
 }
