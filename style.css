@@ -237,7 +237,7 @@ footer {
 }
 
 /* Invis for things not on screen for mobile */
-.invis-small {
+#invis-small {
   position: fixed;
   color: transparent;
 }
@@ -348,7 +348,7 @@ footer {
     padding-left: 6vw;
   }
 
-  .invis-small {
+  #invis-small {
     position: relative;
     color: var(--white);
   }
