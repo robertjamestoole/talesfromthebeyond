@@ -11,11 +11,11 @@
     <title>Tales from the Beyond Podcast</title>
   </head>
   <body>
-    <div class="wrapper card-container">
+    <div class="wrapper">
       <div class="container">
         <div class="hero-panel"></div>
-        <nav class="nav-bar">
-          <a href="#podcast" class="logo-link"
+        <nav class="nav-bar flex" id="top">
+          <a href="#podcast" class="logo-link container"
             ><svg
               width="100"
               height="100"
@@ -40,8 +40,11 @@
               />
             </svg>
           </a>
-          <hr class="nav-underline" />
+          <a href="#podcast" class="invis-small show-large nav-link no-dec">Podcast</a>
+          <a href="#social-media" class="invis-small show-large nav-link no-dec">Social Media</a>
+          <a href="#contact" class="invis-small show-large nav-link no-dec">Contact</a>
         </nav>
+        <hr class="nav-underline" />
         <div class="card flex">
           <div class="flex-center">
             <h1 class="big-text">
@@ -59,16 +62,16 @@
         </div>
       </div>
     </div>
-    <div class="wrapper card-container">
+    <div class="wrapper" id="podcast">
       <main class="container">
         <h2 class="big-text">Listen Here!</h2>
         <small class="small-grey">
           On any platform. <span class="just-yellow">Any</span> where you are.
           <br />Find us on your favorite podcatcher.
         </small>
-        <ul class="no-dec">
+        <ul class="no-dec flex flex-center">
           <li>
-            <a href="#" class="trans"
+            <a href="https://open.spotify.com/show/66cjcqqtA4dQdjVkIp04hN" class="trans flex-center"
               ><svg
                 viewBox="0 0 328 576"
                 fill="none"
@@ -109,7 +112,7 @@
             </a>
           </li>
           <li>
-            <a href="#" class="trans"
+            <a href="https://podcasts.apple.com/us/podcast/spooky-sh-t-tales-from-the-beyond/id1498566333" class="trans flex-center"
               ><svg
                 viewBox="0 0 328 576"
                 fill="none"
@@ -156,7 +159,7 @@
             </a>
           </li>
           <li>
-            <a href="#" class="trans"
+            <a href="https://castbox.fm/channel/id2607105?utm_source=podcaster&utm_medium=dlink&utm_campaign=c_2607105&utm_content=Spooky%20Sh*t%20%26%20Tales%20From%20the%20Beyond-CastBox_FM" class="trans flex-center"
               ><svg
                 viewBox="0 0 328 576"
                 fill="none"
@@ -216,15 +219,15 @@
         </small>
       </main>
     </div>
-    <div class="wrapper card-container">
+    <div class="wrapper" id="social-media">
       <section class="container">
         <h2 class="big-text">Follow Us.</h2>
         <small class="small-grey"
           >For the latest news <br />and updates. <br />Check out our social
           media.</small
         >
-        <div class="top-social flex">
-          <a href="#" class="trans flex-center"
+        <div class="flex flex-center">
+          <a href="https://www.instagram.com/talesfromthebeyondpodcast/" class="trans flex-center top-social"
             ><svg
               viewBox="0 0 399 399"
               fill="none"
@@ -308,7 +311,7 @@
               </defs>
             </svg>
           </a>
-          <a href="#" class="trans flex-center"
+          <a href="https://www.youtube.com/channel/UCPZJs0is3lcBY1iYHhT7Jyw/featured?view_as=subscriber" class="trans flex-center top-social"
             ><svg
               viewBox="0 0 399 399"
               fill="none"
@@ -330,8 +333,8 @@
             </svg>
           </a>
         </div>
-        <div class="bot-social flex flex-social-bottom">
-          <a href="#" class="trans flex-center"
+        <div class=" flex flex-center">
+          <a href="https://twitter.com/spooky_beyond" class="trans flex-center bot-social"
             ><svg
               viewBox="0 0 399 399"
               fill="none"
@@ -351,7 +354,7 @@
         </div>
       </section>
     </div>
-    <div class="wrapper card-container">
+    <div class="wrapper">
       <section class="container">
         <h2 class="big-text">Get in Touch</h2>
         <small class="small-grey"
@@ -360,6 +363,7 @@
         >
         <form
           name="contact"
+          id="contact"
           method="POST"
           data-netlify="true"
           class="form container"
@@ -379,23 +383,23 @@
             /></label>
           </p>
           <p>
-            <label
+            <label class="form-msg"
               >Message:
               <textarea
                 name="message"
-                placeholder="This is the best podcast ever!"
+                placeholder="This is the best podcast ever!" cols="30"
               ></textarea>
             </label>
           </p>
           <p>
-            <button type="submit">Send</button>
+            <button type="submit" class="btn-text">Send</button>
           </p>
         </form>
       </section>
     </div>
       <footer class="container">
         <small class="small-grey"
-          >Back to<a href="#" class="just-yellow">Top</a></small
+          >Back to<a href="#top" class="just-yellow">Top</a></small
         >
     </div>
   </body>
