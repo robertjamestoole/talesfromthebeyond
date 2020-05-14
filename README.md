@@ -1,4 +1,4 @@
-# talesfromthebeyond
+# SpookySh*tandTalesfromtheBeyondPodcast
 This is a simple podcast website to link to new episodes and social media all off site.
 
 This podcast website was a project I did for a group of friends that wanted a simple and minimal website that their listeners could visit.
